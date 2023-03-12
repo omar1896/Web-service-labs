@@ -1,0 +1,12 @@
+{
+   "require": {
+      "guzzlehttp/guzzle": "^7.5"
+   },
+   "config": {
+    "github-oauth": {
+        "github.com": "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"
+    }
+}
+   
+}
+
