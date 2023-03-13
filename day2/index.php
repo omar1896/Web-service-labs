@@ -100,6 +100,13 @@ switch ($method) {
         $myhandler->connect();
         $myhandler->update(json_decode($xx), $resourceid);
         break;
+/***********************************in case post method********************************* */
+
+        case 'POST':
+            $newdata=json_decode(file_get_contents("php://input"),true);
+                $myhandler->save($newdata);
+                echo json_encode(["success"=>"item added successfully"]);
+            break;
 
 /*****************************************in case any other request********************************** */
     default:
